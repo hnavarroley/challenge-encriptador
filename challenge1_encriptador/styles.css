@@ -1,0 +1,170 @@
+*{
+    background: #f3f5fc;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+
+.text_area{
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder {color: #0a3871;}
+    .text_area:focus{
+        outline: none;
+    }
+
+.mensaje {
+    background: white;
+    background-image: url("img/Muneco.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn_desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn_encriptar {
+    background: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn_copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    position: absolute;
+    width: 336px;
+}
+
+.enunciado_img{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 0%;
+    padding-left: 20%;
+}
+.informacion_img {
+    color: #495057;
+    margin-top: 0%;
+    font-size: 18px;
+    padding-left: 20%;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+
+/* Para pantallas más pequeñas, como teléfonos móviles */
+@media (max-width: 600px) {
+    .logo {
+        width: 20%; /* Ajusta el tamaño del logo */
+    }
+
+    main {
+        flex-direction: column; /* Cambia la disposición a columna */
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .text_area,
+    .mensaje {
+        width: 100%; /* Ajusta el ancho para que se adapte a la pantalla */
+    }
+
+    .btn_encriptar,
+    .btn_desencriptar,
+    .btn_copiar {
+        width: 100%; /* Botones de ancho completo */
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .enunciado_img,
+    .informacion_img {
+        font-size: 20px; /* Tamaño de fuente más pequeño */
+        padding-left: 5%;
+    }
+}
+
+/* Para pantallas de tamaño mediano, como tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo {
+        width: 15%; /* Ajusta el tamaño del logo para tabletas */
+    }
+
+    main {
+        flex-direction: row; /* Mantiene la disposición en fila */
+        margin-left: 40px; /* Ajusta el margen para tabletas */
+    }
+
+    .text_area,
+    .mensaje {
+        width: 90%; /* Ajusta el ancho para tabletas */
+    }
+
+    .btn_encriptar,
+    .btn_desencriptar,
+    .btn_copiar {
+        width: 45%; /* Ajusta el ancho de los botones para tabletas */
+        margin-left: 10px;
+    }
+
+    .enunciado_img,
+    .informacion_img {
+        font-size: 22px; /* Tamaño de fuente más pequeño */
+        padding-left: 10%;
+    }
+}
+
